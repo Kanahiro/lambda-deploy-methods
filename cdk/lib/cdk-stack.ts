@@ -13,9 +13,6 @@ export class CdkStack extends cdk.Stack {
 				entry: '../src/index.ts',
 				handler: 'handler',
 				architecture: cdk.aws_lambda.Architecture.ARM_64,
-				bundling: {
-					forceDockerBundling: false,
-				},
 			},
 		);
 

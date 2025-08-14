@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: 22
 
+      - name: install dependencies
+        run: npm ci
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
         with:
