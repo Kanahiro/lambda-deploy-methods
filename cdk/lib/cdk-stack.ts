@@ -10,7 +10,7 @@ export class CdkStack extends cdk.Stack {
 			'NodejsFunction',
 			{
 				runtime: cdk.aws_lambda.Runtime.NODEJS_22_X,
-				entry: '../src/index.ts',
+				entry: '../../src/index.ts',
 				handler: 'handler',
 				architecture: cdk.aws_lambda.Architecture.ARM_64,
 			},
