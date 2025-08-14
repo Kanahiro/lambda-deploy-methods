@@ -22,14 +22,11 @@ jobs:
         with:
           node-version: '22.x'
 
-      - name: install pnpm
-        run: npm install -g pnpm
-
       - name: install
-        run: pnpm install
+        run: npm install
 
       - name: build
-        run: pnpm build
+        run: npm run build
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
